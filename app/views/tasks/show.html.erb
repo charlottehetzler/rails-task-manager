@@ -2,4 +2,10 @@
 
 <p><%= @task.details %></p>
 
+<input type="checkbox" name="completed"
+<%= 'checked' if @task.completed %>>
+<%= @task.completed ? "This task is completed" : "This task isn't completed yet" %>
+
+<p><%= link_to "Edit the task", edit_task_path  %></p>
+
 <p><%= link_to "Back to list", tasks_path  %></p>

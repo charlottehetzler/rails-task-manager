@@ -14,3 +14,8 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+const delete = document.querySelector(".delete")
+delete.addEventListener("click", (event) => {
+  alert("Are you sure to delete?")
+})
